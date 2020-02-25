@@ -1,18 +1,23 @@
 package Examples1
 
-const val numThreads = 10
+//global variable countOfThreads
+const val countOfThreads = 10
+
 fun main(args : Array<String>){
+
     val threads = ArrayList<Thread>()
 
-    for(index in 0 until numThreads){
+    //fill list with threads
+    for(index in 0 until countOfThreads){
         println("In main: starting thread: $index")
-        val t = Thread(InnerClass(index))
-        threads.add(t)
-        t.start()
+        val thread = Thread(InnerClass(index))
+        //start thread
+        threads.add(thread)
+        thread.start()
 
     }
-    //Stop them
 
+    //Then, stop them
     threads.forEach { thread ->
         try{
             thread.join()
@@ -22,9 +27,9 @@ fun main(args : Array<String>){
     }
 }
 
-class InnerClass(val id: Int) : Runnable{
+class InnerClass(private val id: Int) : Runnable{
     override fun run() {
-        println("Hello from ${this.id} of $numThreads")
+        println("Hello from ${this.id} of $countOfThreads")
     }
 
 }

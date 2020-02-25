@@ -1,10 +1,10 @@
 package Examples1
 
 fun main(args: Array<String>) {
-    val numThreads = Runtime.getRuntime().availableProcessors()
+    val countOfThreads = Runtime.getRuntime().availableProcessors()
 
-
-    val threads = Array(numThreads) { _ ->
+    //Create table with threads
+    val threads = Array(countOfThreads) { _ ->
         Thread {
             println("Hello world from ${Thread.currentThread().name}")
         }

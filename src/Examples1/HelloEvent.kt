@@ -3,17 +3,22 @@ package Examples1
 
 fun main(args: Array<String>) {
     val numCores = Runtime.getRuntime().availableProcessors()
-    val numThreads = 2 * numCores
+    val countOfThreads = 2 * numCores
     val threads = ArrayList<Thread>()
-    for (index in 0 until numThreads) {
+
+    //add threads into the list
+    for (index in 0 until countOfThreads) {
         pressAnyKeyToContinue()
+        //after key pressed, thread'll be created
         val thread = Thread(Inner(id = index))
+        //start them
         thread.start()
         threads.add(thread)
     }
 
     threads.forEach { thread ->
         pressAnyKeyToContinue()
+        //after key pressed, thread'll be interrupted
         thread.interrupt()
         try {
             thread.join()
@@ -29,13 +34,15 @@ fun main(args: Array<String>) {
 fun pressAnyKeyToContinue() {
     println("Press enter to start/stop a thread")
     try {
+        //read line from sytem in
         readLine()
     }catch (e: Exception){
         e.printStackTrace()
     }
 }
 
-class Inner(val id: Int) : Runnable {
+//Inner runnable class with id
+class Inner(private val id: Int) : Runnable {
     override fun run() {
         while (true) {
             println("***Hello from ${this.id}***")
