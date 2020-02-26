@@ -4,6 +4,7 @@ fun main(args: Array<String>) {
     val countOfThreads = Runtime.getRuntime().availableProcessors()
 
     //Create table with threads
+
     val threads = Array(countOfThreads) { _ ->
         Thread {
             println("Hello world from ${Thread.currentThread().name}")
@@ -11,6 +12,7 @@ fun main(args: Array<String>) {
     }
 
     println("Starting threads")
+
 
     //Start them up
     threads.forEach {thread ->

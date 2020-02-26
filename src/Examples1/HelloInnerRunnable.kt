@@ -16,6 +16,7 @@ fun main(args : Array<String>){
         thread.start()
 
     }
+    val w = Worker()
 
     //Then, stop them
     threads.forEach { thread ->
