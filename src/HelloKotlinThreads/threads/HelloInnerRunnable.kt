@@ -1,4 +1,4 @@
-package Examples1
+package HelloKotlinThreads.threads
 
 //global variable countOfThreads
 const val countOfThreads = 10

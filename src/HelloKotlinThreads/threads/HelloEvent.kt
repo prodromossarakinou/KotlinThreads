@@ -1,4 +1,6 @@
-package Examples1
+package HelloKotlinThreads.threads
+
+import HelloKotlinThreads.models.EventHello
 
 
 fun main(args: Array<String>) {
@@ -10,7 +12,7 @@ fun main(args: Array<String>) {
     for (index in 0 until countOfThreads) {
         pressAnyKeyToContinue()
         //after key pressed, thread'll be created
-        val thread = Thread(Inner(id = index))
+        val thread = Thread(EventHello(id = index))
         //start them
         thread.start()
         threads.add(thread)
@@ -38,21 +40,5 @@ fun pressAnyKeyToContinue() {
         readLine()
     }catch (e: Exception){
         e.printStackTrace()
-    }
-}
-
-//Inner runnable class with id
-class Inner(private val id: Int) : Runnable {
-    override fun run() {
-        while (true) {
-            println("***Hello from ${this.id}***")
-            try {
-                Thread.sleep(5000)
-            } catch (e: InterruptedException) {
-                println("***Good bye from ${this.id} ***")
-                break;
-            }
-        }
-
     }
 }
