@@ -2,10 +2,10 @@ package HelloKotlinThreads.threads
 
 const val numThreads = 10
 
-fun main(args : Array<String>){
-    val threads : ArrayList<Thread> = ArrayList()
+fun main(args: Array<String>) {
+    val threads: ArrayList<Thread> = ArrayList()
 
-    for(numberOfThread in 0 until numThreads){
+    for (numberOfThread in 0 until numThreads) {
         println("In main: starting thread $numberOfThread")
         val thread = InnerThread(numberOfThread)
         threads.add(numberOfThread, thread)
@@ -13,10 +13,10 @@ fun main(args : Array<String>){
     }
 
 
-    threads.forEach {thread ->
+    threads.forEach { thread ->
         try {
             thread.join()
-        }catch (e: InterruptedException){
+        } catch (e: InterruptedException) {
             e.printStackTrace()
         }
     }
@@ -25,7 +25,7 @@ fun main(args : Array<String>){
 
 }
 
-class InnerThread(private val id: Int) : Thread(){
+class InnerThread(private val id: Int) : Thread() {
 
     override fun run() {
         println("Hello from ${this.id} of $numThreads")

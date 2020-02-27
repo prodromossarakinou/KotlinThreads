@@ -2,7 +2,7 @@ package HelloKotlinThreads.models
 
 class EventHello(
     private val id: Int
-): Runnable{
+) : Runnable {
 
     override fun run() {
         while (true) {

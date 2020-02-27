@@ -8,25 +8,25 @@ class RecursiveRunnable(
     override fun run() {
         println(" *** Hello from ${this.id} ***")
         //Sleep this thread and continue
-        try{
+        try {
             //instead of sleep, we can make some difficult calculations
             Thread.sleep(1000)
-        }catch (e: InterruptedException){
+        } catch (e: InterruptedException) {
             e.printStackTrace()
         }
 
-        if(this.id == limit){
+        if (this.id == limit) {
             println("***Goodbye from ${this.id}***")
-        }else{
+        } else {
             //Start the next thread, until threads == limit
             println("Starting thread ${this.id + 1}...")
             val thread = Thread(RecursiveRunnable(this.id + 1, this.limit))
             thread.start()
 
-            try{
+            try {
                 //wait for it to finish
                 thread.join()
-            }catch (e: InterruptedException){
+            } catch (e: InterruptedException) {
                 e.printStackTrace()
             }
 
@@ -35,7 +35,7 @@ class RecursiveRunnable(
 
             try {
                 Thread.sleep(1000)
-            }catch (e: InterruptedException){
+            } catch (e: InterruptedException) {
                 e.printStackTrace()
             }
 

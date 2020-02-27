@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
         thread.interrupt()
         try {
             thread.join()
-        }catch (e : InterruptedException){
+        } catch (e: InterruptedException) {
             e.printStackTrace()
         }
     }
@@ -38,7 +38,7 @@ fun pressAnyKeyToContinue() {
     try {
         //read line from sytem in
         readLine()
-    }catch (e: Exception){
+    } catch (e: Exception) {
         e.printStackTrace()
     }
 }
