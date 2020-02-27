@@ -1,6 +1,6 @@
-package HelloKotlinThreads.threads
+package helloKotlinThreads.threads
 
-import HelloKotlinThreads.models.RecursiveRunnable
+import helloKotlinThreads.models.RecursiveRunnable
 
 
 fun main(args: Array<String>) {

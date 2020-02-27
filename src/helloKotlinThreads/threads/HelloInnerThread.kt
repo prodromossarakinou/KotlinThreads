@@ -1,4 +1,4 @@
-package HelloKotlinThreads.threads
+package helloKotlinThreads.threads
 
 const val numThreads = 10
 

@@ -1,4 +1,4 @@
-package HelloKotlinThreads.models
+package helloKotlinThreads.models
 
 class MyRunnable(
     private val id: Int,

@@ -1,4 +1,4 @@
-package HelloKotlinThreads.models
+package helloKotlinThreads.models
 
 class EventHello(
     private val id: Int

@@ -1,4 +1,4 @@
-package HelloKotlinThreads.threads
+package helloKotlinThreads.threads
 
 fun main(args: Array<String>) {
     val countOfThreads = Runtime.getRuntime().availableProcessors()

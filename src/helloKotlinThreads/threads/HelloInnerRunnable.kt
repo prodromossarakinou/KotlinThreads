@@ -1,4 +1,4 @@
-package HelloKotlinThreads.threads
+package helloKotlinThreads.threads
 
 //global variable countOfThreads
 const val countOfThreads = 10
