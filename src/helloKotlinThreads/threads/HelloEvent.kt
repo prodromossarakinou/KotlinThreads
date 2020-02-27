@@ -1,6 +1,6 @@
 package helloKotlinThreads.threads
 
-import helloKotlinThreads.models.EventHello
+import allmodels.EventHello
 
 
 fun main(args: Array<String>) {

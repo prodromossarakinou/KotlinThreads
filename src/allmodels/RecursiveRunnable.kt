@@ -1,4 +1,4 @@
-package helloKotlinThreads.models
+package allmodels
 
 class RecursiveRunnable(
     private val id: Int,

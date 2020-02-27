@@ -1,12 +1,13 @@
-package helloKotlinThreads.models
+package allmodels
 
-class MyRunnable(
+class MyThreadClass(
     private val id: Int,
     private val totalThreads: Int
-) : Runnable {
-    //Simple thread, Hello and exit
+) : Thread() {
+
     override fun run() {
         println("Hello from thread ${this.id} out of ${this.totalThreads}")
         println("Thread ${this.id} exits")
     }
+
 }
