@@ -19,7 +19,7 @@
 
    [JetBrainsRepo]: <https://github.com/JetBrains/kotlin/releases/tag/v1.3.61>
   
-## In project's files, multiple programs have outer classes:
+## In Programs with outer Classes:
     ~ In this case, we need to compile them together.
     Example: The file of program -> program.kt and a class whichone program uses -> myclass.kt
     1. IN CMD: kotlinc -include-runtime -d <outputfilename>.jar <path>\program.kt <otherpath>\myclass.kt 
