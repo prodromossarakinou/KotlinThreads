@@ -1,4 +1,4 @@
-package allmodels
+package allmodels.hellomodels
 
 class EventHello(
     private val id: Int

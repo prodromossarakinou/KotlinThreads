@@ -1,6 +1,6 @@
 package helloKotlinThreads.threads
 
-import allmodels.MyRunnable
+import allmodels.hellomodels.MyRunnable
 
 const val numberOfThreads = 12
 fun main(args: Array<String>) {

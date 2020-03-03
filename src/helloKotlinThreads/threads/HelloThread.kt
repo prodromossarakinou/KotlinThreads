@@ -1,6 +1,6 @@
 package helloKotlinThreads.threads
 
-import allmodels.MyThreadClass
+import allmodels.hellomodels.MyThreadClass
 
 fun main(args: Array<String>) {
     val numberOfThreads = 10

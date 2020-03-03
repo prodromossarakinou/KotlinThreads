@@ -1,6 +1,6 @@
 package helloKotlinThreads.threads
 
-import allmodels.SecondConstructorExample
+import allmodels.hellomodels.SecondConstructorExample
 
 
 fun main(args: Array<String>) {

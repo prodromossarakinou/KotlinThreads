@@ -1,4 +1,4 @@
-package allmodels
+package allmodels.hellomodels
 
 class MyThreadClass(
     private val id: Int,

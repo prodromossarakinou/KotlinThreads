@@ -1,4 +1,4 @@
-package allmodels
+package allmodels.hellomodels
 
 class MyRunnable(
     private val id: Int,

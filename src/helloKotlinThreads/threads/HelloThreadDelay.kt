@@ -1,6 +1,6 @@
 package helloKotlinThreads.threads
 
-import allmodels.MyThreadWithDelayClass
+import allmodels.hellomodels.MyThreadWithDelayClass
 
 fun main(args : Array<String>){
 

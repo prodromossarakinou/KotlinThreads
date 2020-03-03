@@ -1,4 +1,4 @@
-package allmodels
+package allmodels.hellomodels
 
 class MyThreadWithDelayClass (
     private val id: Int,
