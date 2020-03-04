@@ -1,8 +1,10 @@
 package helloKotlinThreads.threads
-
+/*
+@author: prodromos sarakinou
+ */
 const val numThreads = 10
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>?) {
     val threads: ArrayList<Thread> = ArrayList()
 
     for (numberOfThread in 0 until numThreads) {

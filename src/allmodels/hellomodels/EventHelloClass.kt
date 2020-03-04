@@ -1,6 +1,9 @@
 package allmodels.hellomodels
 
-class EventHello(
+/*
+@author: prodromos sarakinou
+ */
+class EventHelloClass(
     private val id: Int
 ) : Runnable {
 

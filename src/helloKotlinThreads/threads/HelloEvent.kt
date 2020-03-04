@@ -1,6 +1,10 @@
 package helloKotlinThreads.threads
 
-import allmodels.hellomodels.EventHello
+/*
+@author: prodromos sarakinou
+ */
+
+import allmodels.hellomodels.EventHelloClass
 
 
 fun main(args: Array<String>) {
@@ -12,7 +16,7 @@ fun main(args: Array<String>) {
     for (index in 0 until countOfThreads) {
         pressAnyKeyToContinue()
         //after key pressed, thread'll be created
-        val thread = Thread(EventHello(id = index))
+        val thread = Thread(EventHelloClass(id = index))
         //start them
         thread.start()
         threads.add(thread)

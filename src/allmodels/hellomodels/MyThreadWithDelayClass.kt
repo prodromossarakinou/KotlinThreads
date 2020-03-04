@@ -1,5 +1,8 @@
 package allmodels.hellomodels
 
+/*
+@author: prodromos sarakinou
+ */
 class MyThreadWithDelayClass (
     private val id: Int,
     private val totalThreads: Int

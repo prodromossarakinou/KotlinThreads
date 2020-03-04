@@ -1,6 +1,8 @@
 package allmodels.hellomodels
-
-class MyRunnable(
+/*
+@author: prodromos sarakinou
+ */
+class MyRunnableClass(
     private val id: Int,
     private val totalThreads: Int
 ) : Runnable {

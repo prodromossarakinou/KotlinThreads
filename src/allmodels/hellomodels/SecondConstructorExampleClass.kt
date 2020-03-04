@@ -1,12 +1,16 @@
 package allmodels.hellomodels
+
+/*
+@author: prodromos sarakinou
+ */
+
 /*
     This is an example about:
         1. Kotlin secondary constructor
         2. Null Safety
-
 */
 
-class SecondConstructorExample() : Runnable {
+class SecondConstructorExampleClass() : Runnable {
     // ? after Int, say to compiler, that the var could be Int or null -> Kotlin's null safety
     // We can use ? after any type of variable
     private var id: Int? = null

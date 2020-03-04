@@ -1,6 +1,11 @@
 package helloKotlinThreads.threads
 
-import allmodels.hellomodels.RecursiveRunnable
+/*
+@author: prodromos sarakinou
+ */
+
+
+import allmodels.hellomodels.RecursiveRunnableClass
 
 
 fun main(args: Array<String>) {
@@ -9,7 +14,7 @@ fun main(args: Array<String>) {
     val numThreads = 8 * numCores
 
     println("Starting thread 0")
-    val thread = Thread(RecursiveRunnable(0, numThreads))
+    val thread = Thread(RecursiveRunnableClass(0, numThreads))
     //Start first thread
     thread.start()
     try {

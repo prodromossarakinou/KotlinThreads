@@ -1,5 +1,8 @@
 package allmodels.countermodels
 
+/*
+@author: prodromos sarakinou
+ */
 class CounterOneClass(
     private val startedValue: Int,
     private val increase: Int,

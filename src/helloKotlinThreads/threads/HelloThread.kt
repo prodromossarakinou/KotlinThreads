@@ -1,5 +1,9 @@
 package helloKotlinThreads.threads
 
+/*
+@author: prodromos sarakinou
+ */
+
 import allmodels.hellomodels.MyThreadClass
 
 fun main(args: Array<String>) {

@@ -1,6 +1,8 @@
 package allmodels.hellomodels
-
-class RecursiveRunnable(
+/*
+@author: prodromos sarakinou
+ */
+class RecursiveRunnableClass(
     private val id: Int,
     private val limit: Int
 ) : Runnable {
@@ -20,7 +22,7 @@ class RecursiveRunnable(
         } else {
             //Start the next thread, until threads == limit
             println("Starting thread ${this.id + 1}...")
-            val thread = Thread(RecursiveRunnable(this.id + 1, this.limit))
+            val thread = Thread(RecursiveRunnableClass(this.id + 1, this.limit))
             thread.start()
 
             try {

@@ -1,5 +1,7 @@
 package allmodels.hellomodels
-
+/*
+@author: prodromos sarakinou
+ */
 class MyThreadClass(
     private val id: Int,
     private val totalThreads: Int

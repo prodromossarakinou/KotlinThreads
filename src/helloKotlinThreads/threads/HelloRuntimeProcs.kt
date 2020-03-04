@@ -1,6 +1,10 @@
 package helloKotlinThreads.threads
 
-import allmodels.hellomodels.SecondConstructorExample
+/*
+@author: prodromos sarakinou
+ */
+
+import allmodels.hellomodels.SecondConstructorExampleClass
 
 
 fun main(args: Array<String>) {
@@ -12,7 +16,7 @@ fun main(args: Array<String>) {
 
     for (index in 0 until totalThreads) {
         threads[index] = Thread(
-            SecondConstructorExample(
+            SecondConstructorExampleClass(
                 id = index,
                 totalThreads = totalThreads - 1
             )

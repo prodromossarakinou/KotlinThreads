@@ -1,5 +1,7 @@
 package counters
-
+/*
+@author: prodromos sarakinou
+ */
 import allmodels.countermodels.CounterOneClass
 
 fun main(args: Array<String>){
@@ -14,14 +16,20 @@ fun main(args: Array<String>){
     positiveCounter.isDaemon = true
     negativeCounter.isDaemon = true
 
+
+
     //START THEM
     positiveCounter.start()
     negativeCounter.start()
 
+
+
     try{
-        Thread.sleep(10000)
+        Thread.sleep(2000)
     }catch (e: InterruptedException){
         e.printStackTrace()
     }
+
+    println("**********************************MAIN EXITING**********************************")
 
 }
