@@ -24,3 +24,26 @@
     Example: The file of program -> program.kt and a class whichone program uses -> myclass.kt
     1. IN CMD: kotlinc -include-runtime -d <outputfilename>.jar <path>\program.kt <otherpath>\myclass.kt 
     2. Run jar file: java -jar <outfilename>.jar
+
+
+### Example:
+ -  Create a list with random numbers, and then duplicate each number of list.
+ 
+    Files used:
+        
+        GlobalVariables.kt 
+        DuplicateWithThreadsClass.kt
+        DuplicateExample.kt
+        DuplicateExampleWithOutThreads.kt
+        DuplicateExampleWithThreads.kt
+        //I'll add comments in each file to explain those
+        
+     - To execute this example, open a cmd, go to src folder and execute the command below to compile the file:
+        
+            kotlinc -include-runtime -d program.jar allmodels\examples\DuplicateWithThreadsClass.kt allmodels\examples\GlobalList.kt exampleThreads\DuplicateExampleWithOutThreads.kt exampleThreads\DuplicateExampleWithThreads.kt exampleThreads\DuplicateExample.kt
+    
+     - Execute the output jar file with:
+            
+            java -jar program.jar
+        
+        
