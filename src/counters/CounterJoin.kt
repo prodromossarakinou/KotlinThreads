@@ -19,8 +19,6 @@ fun main(args: Array<String>?){
     )
 
     println("Threads starting")
-    counter1.isDaemon = true
-    counter2.isDaemon = true
     counter1.start()
     counter2.start()
 
