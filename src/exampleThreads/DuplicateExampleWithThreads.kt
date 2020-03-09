@@ -9,11 +9,11 @@ object DuplicateExampleWithThreads {
         val threads = ArrayList<DuplicateWithThreadsClass>()
 
 
-        for (index in 0 until GlobalVariables.T) {
+        for (index in 0 until GlobalVariables.totalThreads) {
             threads.add(
                 index, DuplicateWithThreadsClass(
-                    index * (GlobalVariables.N / GlobalVariables.T),
-                    (index + 1) * (GlobalVariables.N / GlobalVariables.T)
+                    index * (GlobalVariables.iterations / GlobalVariables.totalThreads),
+                    (index + 1) * (GlobalVariables.iterations / GlobalVariables.totalThreads)
                 )
             )
         }

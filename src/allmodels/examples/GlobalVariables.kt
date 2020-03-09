@@ -2,11 +2,11 @@ package allmodels.examples
 
 object GlobalVariables {
 
-    const val N = 8000
-    const val T = 16
+    const val iterations = 8000
+    const val totalThreads = 16
     var randomNumbersList = ArrayList<Int>()
     fun createList() {
-        for (index in 0 until N) {
+        for (index in 0 until iterations) {
             randomNumbersList.add(index, (Math.random() * 100).toInt())
         }
     }
